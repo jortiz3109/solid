@@ -13,7 +13,7 @@ class Rectangle extends Figure
         $this->width = $width;
     }
 
-    public function computeArea(): float
+    protected function computeArea(): float
     {
         return $this->width * $this->length;
     }

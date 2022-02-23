@@ -13,7 +13,7 @@ class RectangleTest extends TestCase
     {
         $rectangle = new Rectangle(5, 4);
 
-        $this->assertSame(20.0, $rectangle->computeArea());
+        $this->assertSame(20.0, $rectangle->compute());
     }
 
     /** @test */
@@ -21,6 +21,6 @@ class RectangleTest extends TestCase
     {
         $circle = new Circle(5);
 
-        $this->assertSame(5 * 5  * pi(), $circle->computeArea());
+        $this->assertSame(5 * 5  * pi(), $circle->compute());
     }
 }
