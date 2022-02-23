@@ -9,16 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class RectangleTest extends TestCase
 {
-    /** @test */
-    public function itComputesRectangleArea()
+    public function test_it_computes_rectangle_area(): void
     {
         $rectangle = new Rectangle(5, 4);
 
         $this->assertSame(20.0, $rectangle->compute());
     }
 
-    /** @test */
-    public function itComputesCircleArea()
+    public function test_it_computes_circle_area(): void
     {
         $circle = new Circle(5);
 
@@ -29,16 +27,14 @@ class RectangleTest extends TestCase
      * WRONG WAY BEHAVIOR
      */
 
-    /** @test */
-    public function itComputesRectangleArea1()
+    public function test_it_computes_rectangle_area1(): void
     {
         $rectangle = new \Jortiz3109\Solid\OCP\WrongWay\Rectangle(5, 4);
 
         $this->assertSame(20.0, AreaCalculator::compute($rectangle));
     }
 
-    /** @test */
-    public function itComputesCircleArea1()
+    public function test_it_computes_circle_area1(): void
     {
         $circle = new \Jortiz3109\Solid\OCP\WrongWay\Circle(5);
 
