@@ -8,16 +8,14 @@ use PHPUnit\Framework\TestCase;
 
 class RectangleTest extends TestCase
 {
-    /** @test */
-    public function itComputesRectangleArea()
+    public function test_it_computes_rectangle_area(): void
     {
         $rectangle = new Rectangle(5, 4);
 
         $this->assertSame(20.0, $rectangle->computeArea());
     }
 
-    /** @test */
-    public function itComputesCircleArea()
+    public function test_it_computes_circle_area(): void
     {
         $circle = new Circle(5);
 
