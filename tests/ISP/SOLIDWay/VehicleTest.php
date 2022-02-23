@@ -1,6 +1,6 @@
 <?php
 
-namespace ISP\SOLIDWay;
+namespace Jortiz3109\Solid\Tests\ISP\SOLIDWay;
 
 use Jortiz3109\Solid\ISP\SOLIDWay\AirPlane;
 use Jortiz3109\Solid\ISP\SOLIDWay\Car;
