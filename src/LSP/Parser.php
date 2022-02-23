@@ -11,7 +11,7 @@ class Parser
         $this->data = $data;
     }
 
-    public function output()
+    public function output(): Result
     {
         $result = '';
 
@@ -23,7 +23,7 @@ class Parser
         return new Result($result);
     }
 
-    public function line(array $row)
+    public function line(array $row): string
     {
         return implode(' ', $row) . PHP_EOL;
     }

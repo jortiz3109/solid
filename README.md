@@ -42,7 +42,7 @@ interchange the type by any subtype without affecting the client code.
 ```php
 class Client
 {
-    public static function printContent(Parser $parser)
+    public static function printContent(Parser $parser): void
     {
         echo $parser->output();
     }
