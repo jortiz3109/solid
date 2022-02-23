@@ -23,7 +23,7 @@ class Parser
         return new Result($result);
     }
 
-    public function line(array $row): string
+    public function line(array $row)
     {
         return implode(' ', $row) . PHP_EOL;
     }
