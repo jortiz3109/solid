@@ -2,7 +2,7 @@
 
 namespace Jortiz3109\Solid\OCP;
 
-abstract class Figure
+abstract class Figure implements FigureContract
 {
     protected ?float $area = null;
 
