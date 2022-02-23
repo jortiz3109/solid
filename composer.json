@@ -16,13 +16,17 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Jortiz3109\\Solid\\Tests": "tests/"
+            "Jortiz3109\\Solid\\Tests\\": "tests/"
         }
     },
     "authors": [
         {
             "name": "John Edisson Ortiz",
             "email": "john.ortiz@evertecinc.com"
+        },
+        {
+            "name": "Dario Rivera",
+            "email": "dario.rivera@evertecinc.com"
         }
     ]
 }

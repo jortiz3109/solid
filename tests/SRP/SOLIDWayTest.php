@@ -1,6 +1,6 @@
 <?php
 
-namespace SRP;
+namespace Jortiz3109\Solid\Tests\SRP;
 
 use Jortiz3109\Solid\SRP\Exports\HTML;
 use Jortiz3109\Solid\SRP\Exports\PDF;

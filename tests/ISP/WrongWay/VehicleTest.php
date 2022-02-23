@@ -1,6 +1,6 @@
 <?php
 
-namespace ISP\WrongWay;
+namespace Jortiz3109\Solid\Tests\ISP\WrongWay;
 
 use Exception;
 use Jortiz3109\Solid\ISP\WrongWay\AirPlane;
