@@ -1,6 +1,6 @@
 <?php
 
-namespace OCP;
+namespace Jortiz3109\Solid\Tests\OCP;
 
 use Jortiz3109\Solid\OCP\Circle;
 use Jortiz3109\Solid\OCP\Rectangle;

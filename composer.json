@@ -11,6 +11,11 @@
             "Jortiz3109\\Solid\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Jortiz3109\\Solid\\Tests": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "John Edisson Ortiz",
