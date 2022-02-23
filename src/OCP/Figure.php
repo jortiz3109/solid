@@ -2,7 +2,18 @@
 
 namespace Jortiz3109\Solid\OCP;
 
-abstract class Figure
+abstract class Figure implements FigureContract
 {
-    abstract public function computeArea(): float;
+    protected ?float $area = null;
+
+    public function compute(): float
+    {
+        if (!$this->area) {
+            $this->area = $this->computeArea();
+        }
+
+        return $this->area;
+    }
+
+    abstract protected function computeArea(): float;
 }

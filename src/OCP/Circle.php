@@ -11,7 +11,7 @@ class Circle extends Figure
         $this->radio = $radio;
     }
 
-    public function computeArea(): float
+    protected function computeArea(): float
     {
         return pi() * pow($this->radio, 2);
     }
