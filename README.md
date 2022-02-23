@@ -33,3 +33,43 @@ class Circle extends Figure
     }
 }
 ```
+
+## Liskov Substitution Principle
+
+In this example you can use the `printContent()` method to calculate shape's areas in the client code. You can also
+interchange the type by any subtype without affecting the client code.
+
+```php
+class Client
+{
+    public static function printContent(Parser $parser): void
+    {
+        echo $parser->output();
+    }
+}
+```
+
+In this case, you can use any parser that extends the main `Parser` class.
+
+```php
+$parser = new Parser([
+    [1, 'Steave', 'Developer'],
+    [2, 'Andreas', 'Tester'],
+]);
+
+// subtype CSV
+$csv = new CSVParser([
+    [1, 'Steave', 'Developer'],
+    [2, 'Andreas', 'Tester'],
+]);
+
+// subtype MarkdownTable
+$marrkdown = new MarkdownParser([
+    [1, 'Steave', 'Developer'],
+    [2, 'Andreas', 'Tester'],
+]);
+
+Client::printContent($parser);
+Client::printContent($csv);
+Client::printContent($markdown);
+```
